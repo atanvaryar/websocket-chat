@@ -37,9 +37,9 @@ input.addEventListener("keyup", function() {
 
 socket.on("chat", data => {
   info.innerHTML = "";
-  if (data.usuario === usuario.value) {
+  // if (data.usuario === usuario.value) {
     output.innerHTML += `<p>${data.usuario}: ${data.msg}</p>`;
-  }
+  // }
 });
 
 socket.on("digitando", data => {
